@@ -8,10 +8,7 @@ A smart home dashboard using a 7.5" E-Paper display powered by XIAO ESP32-C3, in
 
 ## 📸 Project Demo
 
-> *Add your photos and video here*
-> - Photo of the complete setup
-> - Close-up of the E-Paper display showing data
-> - Video demonstration (GIF or link to YouTube)
+Video demonstration (https://www.youtube.com/watch?v=QzmY-1wLoSE)
 
 ## ✨ Features
 
