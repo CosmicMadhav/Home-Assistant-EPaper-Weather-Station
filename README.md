@@ -41,10 +41,10 @@ Video demonstration (https://www.youtube.com/watch?v=QzmY-1wLoSE)
 | Component | Quantity | Purpose | Link |
 |-----------|----------|---------|------|
 | XIAO ESP32-C3 | 1 | Display Controller | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
-| XIAO ESP32-C6 | 1 | Relay Controller | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C6-p-5884.html) |
+| XIAO ESP32-C6 | 1 | Relay Controller | [Seeed Studio](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html) |
 | 7.5" E-Paper Display | 1 | Visual Output | Check compatible models |
-| Seeed Temperature Sensor | 1 | Room Temperature | [Seeed Studio](https://www.seeedstudio.com/) |
-| 5V DC Relay Module | 1 | Appliance Control | [Seeed Studio](https://www.seeedstudio.com/) |
+| Seeed Temperature Sensor | 1 | Room Temperature | [Seeed Studio](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html) |
+| 5V DC Relay Module | 1 | Appliance Control | [Seeed Studio](https://www.seeedstudio.com/6-Channel-Wi-Fi-5V-DC-Relay-p-6373.html) |
 | Raspberry Pi 4B | 1 | Home Assistant Server | - |
 | USB-C Cables | 2 | Power Supply | - |
 
@@ -93,18 +93,16 @@ Video demonstration (https://www.youtube.com/watch?v=QzmY-1wLoSE)
 ├── config/
 │   ├── epaper-display.yaml           # ESPHome config for display
 │   ├── relay-controller.yaml         # ESPHome config for relay
-│   └── homeassistant-config.yaml     # Home Assistant integration
+│   └── homeassistant-Wlan intergration      # Home Assistant wireless Wifi integration
 ├── docs/
 │   ├── hardware-setup.md             # Wiring and assembly guide
 │   ├── software-setup.md             # Detailed installation steps
-│   ├── troubleshooting.md            # Common issues and solutions
-│   └── customization.md              # How to customize the display
 ├── images/
 │   ├── wiring-diagram.png
 │   ├── setup-photos/
 │   └── demo-video.mp4
-└── examples/
-    └── alternative-layouts.md         # Different display configurations
+└── Fonts/
+    └── font_ttf.font        # Different display configurations
 ```
 
 ## 💻 Configuration
@@ -137,7 +135,6 @@ You can customize:
 - Weather data fields
 - Temperature units (Celsius/Fahrenheit)
 
-See [docs/customization.md](docs/customization.md) for details.
 
 ## 🔌 Wiring
 
@@ -189,7 +186,6 @@ The wiring is straightforward with minimal connections:
 - Verify sensor address in ESPHome config
 - Try scanning I2C bus for devices
 
-More solutions in [docs/troubleshooting.md](docs/troubleshooting.md)
 
 ## 🎓 What I Learned
 
